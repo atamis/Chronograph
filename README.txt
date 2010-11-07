@@ -1,26 +1,36 @@
 = chronograph
 
-* FIX (url)
+* http://geeklob.wordpress.com
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Chronograph is a Ruby DSL for making timelines
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Intuitive syntax
+* Code easy to understand, good example DSL
+* Multiple output formats
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+    require 'chronograph'
+
+    x = Chronograph::Timeline.new do
+        event "Chronograph released on github" Date.new(2010, 11, 7), "Chronograph is released  in a github repo"
+    end
+
+You can then get the timeline in html table format or in plain text.
+
+For a better example, see chronograph.rb
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* None
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* gem install indigo747-chronograph # Warning, hasn't been tested
 
 == DEVELOPERS:
 
