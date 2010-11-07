@@ -1,0 +1,8 @@
+.autotest
+History.txt
+Manifest.txt
+README.txt
+Rakefile
+bin/chronograph
+lib/chronograph.rb
+test/test_chronograph.rb
