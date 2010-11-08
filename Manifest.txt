@@ -3,6 +3,11 @@ History.txt
 Manifest.txt
 README.txt
 Rakefile
-bin/chronograph
 lib/chronograph.rb
+lib/chronograph/dsl.rb
+lib/chronograph/event.rb
+lib/chronograph/person.rb
 test/test_chronograph.rb
+test/test_dsl.rb
+test/test_person.rb
+test/test_event.rb
