@@ -1,7 +1,7 @@
 
 module Chronograph
     class EventDSL
-        attr_reader :events, :people
+        attr_accessor :events, :people
         def initialize()
             @events = []
             @people = []
