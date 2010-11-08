@@ -1,6 +1,6 @@
 module Chronograph
     class Person < Struct.new(:name, :birth, :death, :desc, :events)
-        attr_reader :name, :birth, :death, :desc, :events
+        attr_reader :name, :birth, :death, :desc
         def initialize(name, birth, death, desc, *events)
             raise TypeError.new("name has to be a name or symbol") unless name.is_a?(String) || name.is_a?(Symbol)
             raise TypeError.new("birth and death must be a date") unless birth.is_a?(Date) && death.is_a?(Date)
