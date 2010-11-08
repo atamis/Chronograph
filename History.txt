@@ -1,6 +1,4 @@
-=== 1.0.0 / 2010-11-07
+=== 0.0.1 / 2010-11-08
 
-* 1 major enhancement
-
-  * Birthday!
+* First release, gem works, most planned features added
 
