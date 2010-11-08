@@ -22,7 +22,7 @@ Chronograph is a Ruby DSL for making timelines
 
 You can then get the timeline in html table format or in plain text.
 
-For a better example, see chronograph.rb
+For a better example, see example/ directory.
 
 == REQUIREMENTS:
 
