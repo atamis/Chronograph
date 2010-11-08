@@ -1,3 +1,7 @@
+libdir = File.dirname(__FILE__)
+$LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
+
+
 require 'date'
 require 'chronograph/event'
 require 'chronograph/person'
