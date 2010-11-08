@@ -2,7 +2,7 @@ require "test/unit"
 require "chronograph/person"
 
 module Chronograph
-    class TestPeson < Test::Unit::TestCase
+    class TestPerson < Test::Unit::TestCase
         def setup
             @t = nil
             assert_nothing_raised(Exception) do
