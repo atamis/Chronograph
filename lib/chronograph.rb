@@ -5,6 +5,7 @@ require 'chronograph/dsl'
 
 
 module Chronograph
+    VERSION = "0.0.1"
 	class Timeline
         include Enumerable
 
