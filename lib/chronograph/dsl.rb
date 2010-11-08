@@ -1,3 +1,5 @@
+require 'chronograph/event'
+require 'chronograph/person'
 
 module Chronograph
     class EventDSL
