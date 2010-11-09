@@ -39,7 +39,7 @@ module Chronograph
 		end
 
 		def get_html_table
-            warn "Warning, get_html_table has not tested"
+#            warn "Warning, get_html_table has not tested"
 			r = "<table>"
 			consolidate.each do |x|
 				r += "<tr>"
