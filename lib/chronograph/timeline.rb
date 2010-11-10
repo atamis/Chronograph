@@ -10,11 +10,17 @@ module Chronograph
 			@events = []
 
             t = EventDSL.new
-			t.instance_eval(&block)
-
+            t.instance_eval &block
             @people << t.people
-            @events << t.events
+            @event << t.events
 		end
+
+        def add &block
+            t = EventDSL.new
+            t.instance_eval &block
+            @people << t.people
+            @event << t.events
+        end
 
         def each(&block)
             consolidate.each(&block)
