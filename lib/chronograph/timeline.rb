@@ -43,7 +43,8 @@ module Chronograph
 			r = "<table>"
 			consolidate.each do |x|
 				r += "<tr>"
-				r += [x.date, x.name, x.desc].map { |x| "<td>" + x.to_s + "</td>"}.join
+                r += "<td class=\"date\">#{x.date}</td> <td class=\"name\">#{x.name}</td> <td class=\"desc\">#{x.desc}</td>"
+				#r += [x.date, x.name, x.desc].map { |x| "<td>" + x.to_s + "</td>"}.join
 				r += "</tr>"
 			end
 			r += "</table>"
