@@ -10,14 +10,14 @@ module Chronograph
 			@events = []
 
             t = EventDSL.new
-            t.instance_eval &block
+            t.instance_eval(&block)
             @people << t.people
-            @event << t.events
+            @events << t.events
 		end
 
         def add &block
             t = EventDSL.new
-            t.instance_eval &block
+            t.instance_eval(&block)
             @people << t.people
             @event << t.events
         end
