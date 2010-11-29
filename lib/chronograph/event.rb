@@ -11,8 +11,15 @@ module Chronograph
             @desc = desc
             @group = group
         end
+
+        def to_table_html
+            "<tr class=\"#{@group}\">"+
+               "<td class=\"date\">#{@date}</td>"+
+               "<td class=\"name\">#{@name}</td>"+
+               "<td class=\"desc\">#{@desc}</td>"+
+               "</tr>"
+        end
     end
-    
 end
 
 def parse_date x

@@ -48,10 +48,7 @@ module Chronograph
 #            warn "Warning, get_html_table has not tested"
 			r = "<table>"
 			consolidate.each do |x|
-				r += "<tr>"
-                r += "<td class=\"date\">#{x.date}</td> <td class=\"name\">#{x.name}</td> <td class=\"desc\">#{x.desc}</td>"
-				#r += [x.date, x.name, x.desc].map { |x| "<td>" + x.to_s + "</td>"}.join
-				r += "</tr>"
+                r += x.to_table_html
 			end
 			r += "</table>"
 		end
