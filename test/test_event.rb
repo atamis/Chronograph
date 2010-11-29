@@ -9,17 +9,19 @@ module Chronograph
         end
 
         def test_errors
-            assert_raise(TypeError) { Event.new(nil, nil, nil)  }
+            assert_raise(TypeError) { Event.new(nil, nil, nil, nil)  }
         end
 
         def test_recall
             name = :test
             date = Date.today
             desc = "cool"
-            e = Event.new(name, date, desc)
+            group = :green
+            e = Event.new(name, date, desc, group)
             assert_equal(name, e.name)
             assert_equal(date, e.date)
             assert_equal(desc, e.desc)
+            assert_equal(group, e.group)
         end
         # And that's all she wrote, folks. There isn't much else to test.
     end
