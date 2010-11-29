@@ -24,5 +24,17 @@ module Chronograph
          assert(p.is_a?(Person), "Oh god, the person wasn't a person!")
          # Later, we could add more for long_event or war
      end
+        def test_group
+            t = EventDSL.new
+            t.group :test do
+                event "Test", 6, "test"
+                person "Test", 6, 7, "test"
+            end 
+
+            x = t.events.flatten
+            
+            assert_equal(3, x.length)
+            x.each { |e| assert_equal(:test, e.group) }
+        end
     end
 end

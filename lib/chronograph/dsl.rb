@@ -49,5 +49,16 @@ module Chronograph
         def parse_date x
             x.is_a?(Integer) ? Date.new(x) : x
         end
+
+        def group name, &block
+            events = []
+            t = EventDSL.new
+            t.instance_eval(&block) if block != nil
+            events << t.events
+            events << t.people.map { |x| x.events}
+            events.flatten!
+            events.each { |x| x.group = name}
+            @events << events.flatten
+        end
     end
 end
