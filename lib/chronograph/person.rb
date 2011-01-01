@@ -19,11 +19,11 @@ module Chronograph
         end
 
         def begining_event
-            Event.new("Birth of #{name}", birth, "#{name} is born")
+            Event.new("Birth of #{name}", birth, "#{name} is born. #{@desc}")
         end
 
         def ending_event
-             Event.new("Death of #{name}", death, "#{name} dies")
+             Event.new("Death of #{name}", death, "#{name} dies. #{@desc}")
         end
 
 
@@ -31,11 +31,11 @@ module Chronograph
 
     class LongEvent < Person
         def begining_event                               
-            Event.new("Beginning of #{name}", birth, "#{name} begins")
+            Event.new("Beginning of #{name}", birth, "#{name} begins. #{@desc}")
         end
 
         def ending_event
-            Event.new("End of #{name}", death, "#{name} ends")
+            Event.new("End of #{name}", death, "#{name} ends. #{@desc}")
         end
     end
 
