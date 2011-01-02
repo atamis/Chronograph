@@ -26,7 +26,7 @@ For a better example, see example/ directory.
 
 == REQUIREMENTS:
 
-* None
+* kramdown
 
 == INSTALL:
 

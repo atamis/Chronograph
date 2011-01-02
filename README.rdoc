@@ -20,13 +20,13 @@ Chronograph is a Ruby DSL for making timelines
         event "Chronograph released on github" Date.new(2010, 11, 7), "Chronograph is released  in a github repo"
     end
 
-You can then get the timeline in html table format or in plain text.
+You can then get the timeline in html table format or in plain text. When in html format, the description is run through Kramdown, a form of Markdown.
 
 For a better example, see example/ directory.
 
 == REQUIREMENTS:
 
-* None
+* kramdown
 
 == INSTALL:
 

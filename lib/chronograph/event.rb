@@ -1,3 +1,5 @@
+require "kramdown"
+
 module Chronograph
     class Event
         attr_accessor :name, :date, :desc, :group
@@ -16,7 +18,7 @@ module Chronograph
             "<tr class=\"#{@group}\">"+
                "<td class=\"date\">#{@date}</td>"+
                "<td class=\"name\">#{@name}</td>"+
-               "<td class=\"desc\">#{@desc}</td>"+
+               "<td class=\"desc\">#{Kramdown::Document.new(@desc).to_html}</td>"+
                "</tr>"
         end
     end

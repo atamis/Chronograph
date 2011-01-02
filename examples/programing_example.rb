@@ -16,7 +16,7 @@ t = Chronograph::Timeline.new do
             # This event could be here, it could be in the
             # root of the block, or in one further in. It 
             # doesn't matter
-            event "Mr. Ruby leaves Japan", 2000, "It was easy"
+            event "Mr. Ruby leaves Japan", 2000, "It was _easy_"
 
             # People, long_events, and wars are handled in 
             # essentially the same way, but with different
